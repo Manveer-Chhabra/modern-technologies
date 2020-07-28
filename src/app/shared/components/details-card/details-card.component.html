@@ -1,0 +1,55 @@
+<div class="details-container">
+  <div class="content" *ngIf="!showDescription">
+    <div class="details">
+      <span class="title">
+        Name
+      </span>
+      <span class="detail f-600">
+        {{ data.name }}
+      </span>
+    </div>
+    <div class="details">
+      <span class="title">
+        Category
+      </span>
+      <span class="detail f-600">
+        {{ data.category }}
+      </span>
+    </div>
+    <div class="details">
+      <span class="title">
+        Latest Version
+      </span>
+      <span class="detail f-600">
+        {{ data.latestVersion }}
+      </span>
+    </div>
+    <div class="details">
+      <span class="title">
+        Documentation
+      </span>
+      <span class="detail">
+        <a>
+          {{ data.documentation }}
+        </a>
+      </span>
+    </div>
+  </div>
+  <div class="content" *ngIf="showDescription">
+    <p>
+      {{ data.description }}
+    </p>
+  </div>
+  <div class="action">
+    <div *ngIf="!showDescription">
+      <button (click)="switchDetails(true)">
+        Description
+      </button>
+    </div>
+    <div *ngIf="showDescription" (click)="switchDetails(false)">
+      <button>
+        Back
+      </button>
+    </div>
+  </div>
+</div>

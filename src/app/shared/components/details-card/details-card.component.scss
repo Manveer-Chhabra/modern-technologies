@@ -1,0 +1,30 @@
+.details-container {
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  height: 120px;
+  padding: 20px 40px;
+  display: flex;
+  .content {
+    width: 80%;
+    .details {
+      .title {
+        width: 120px;
+        display: inline-block;
+        margin: 5px 0;
+      }
+      .detail {
+        display: inline-block;
+        margin: 5px 0;
+      }
+    }
+  }
+  .action {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 20%;
+    align-items: flex-end;
+    button {
+      width: 120px;
+    }
+  }
+}

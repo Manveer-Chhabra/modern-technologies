@@ -6,7 +6,13 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./details-card.component.scss'],
 })
 export class DetailsCardComponent implements OnInit {
-  @Input() data = {};
+  @Input() data = {
+    name: '',
+    category: '',
+    latestVersion: '',
+    documentation: '',
+    description: '',
+  };
   showDescription = false;
 
   constructor() {}

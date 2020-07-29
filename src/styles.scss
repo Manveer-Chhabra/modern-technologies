@@ -19,5 +19,16 @@ a {
 }
 
 .f-600 {
+  font-weight: 500;
+}
+
+.mat-tab-label-active {
+  color: black;
+  opacity: 1;
   font-weight: 600;
+  border-bottom: 1px solid black;
+}
+.mat-tab-group.mat-primary .mat-ink-bar,
+.mat-tab-nav-bar.mat-primary .mat-ink-bar {
+  background-color: black;
 }

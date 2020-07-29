@@ -5,11 +5,10 @@ import { FrontendComponent } from './components/frontend/frontend.component';
 import { BackendComponent } from './components/backend/backend.component';
 import { TestingComponent } from './components/testing/testing.component';
 
-
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
-  { path: 'frontEnd', component:  FrontendComponent},
+  { path: 'frontEnd', component: FrontendComponent },
   { path: 'backEnd', component: BackendComponent },
   { path: 'testing', component: TestingComponent },
   { path: '**', component: HomeComponent },
@@ -17,6 +16,6 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

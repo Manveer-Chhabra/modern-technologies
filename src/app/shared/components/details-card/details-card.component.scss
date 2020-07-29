@@ -1,5 +1,5 @@
 .details-container {
-  margin: 10px 0;
+  margin: 15px 0;
   border: 1px solid #ccc;
   height: 120px;
   padding: 20px 40px;
@@ -25,6 +25,10 @@
     align-items: flex-end;
     button {
       width: 120px;
+      height: 40px;
+      background: gray;
+      color: white;
+      border: 0;
     }
   }
 }

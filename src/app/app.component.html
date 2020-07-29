@@ -1,16 +1,11 @@
 <app-header></app-header>
-<!-- <mat-tab-group mat-align-tabs="start">\
-  <div *ngFor="let tab of tabs">
-    <mat-tab label="First">Home</mat-tab>
-  </div>
-  <mat-tab label="Second">Content 2</mat-tab>
-  <mat-tab label="Third">Content 3</mat-tab>
-</mat-tab-group> -->
 <div class="navigation-links">
-<mat-tab-group [selectedIndex]="selected.value"
-               (selectedIndexChange)="selected.setValue($event)">
-  <mat-tab *ngFor="let tab of tabs; let index = index" [label]="tab.name">
-  </mat-tab>
-</mat-tab-group>
+  <mat-tab-group
+    [selectedIndex]="selected.value"
+    (selectedIndexChange)="selected.setValue($event)"
+  >
+    <mat-tab *ngFor="let tab of tabs; let index = index" [label]="tab.name">
+    </mat-tab>
+  </mat-tab-group>
 </div>
 <router-outlet></router-outlet>

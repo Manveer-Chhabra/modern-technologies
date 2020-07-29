@@ -4,6 +4,9 @@
   height: 120px;
   padding: 20px 40px;
   display: flex;
+  .description {
+    width: 80%;
+  }
   .content {
     width: 80%;
     .details {

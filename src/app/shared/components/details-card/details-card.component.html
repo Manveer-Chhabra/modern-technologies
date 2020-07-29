@@ -35,18 +35,22 @@
       </span>
     </div>
   </div>
-  <div class="content" *ngIf="showDescription">
+  <div class="description" *ngIf="showDescription">
     <p>
       {{ data.description }}
     </p>
   </div>
   <div class="action">
     <div *ngIf="!showDescription">
-      <button (click)="switchDetails(true)">
+      <button id="description-button" (click)="switchDetails(true)">
         Description
       </button>
     </div>
-    <div *ngIf="showDescription" (click)="switchDetails(false)">
+    <div
+      id="back-button"
+      *ngIf="showDescription"
+      (click)="switchDetails(false)"
+    >
       <button>
         Back
       </button>
